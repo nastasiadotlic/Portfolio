@@ -36,9 +36,9 @@
 
           <nav class="nav">
             <ul class="nav__menu">
-              <li>À propos de moi</li>
-              <li>Mes projets</li>
-              <li>Contact</li>
+              <li><a href="../src/screen/apropos.html">À propos de moi</a></li>
+              <li><a href>Mes projets</a></li>
+              <li><a href>Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -47,33 +47,98 @@
       <div class="names"> <!--pour faire flexbox avec le nom et les carrés-->
         <section class="name">
           <div class="letters">
-            <div class="letter">N</div>
-            <div class="letter">A</div>
-            <div class="letter">S</div>
-            <div class="letter">T</div>
-            <div class="letter">A</div>
-            <div class="letter">S</div>
-            <div class="letter">I</div>
-            <div class="letter">A</div>
+            <div class="letter letter--one">N</div>
+            <div class="letter letter--two">A</div>
+            <div class="letter letter--three">S</div>
+            <div class="letter letter--four">T</div>
+            <div class="letter letter--five">A</div>
+            <div class="letter letter--six">S</div>
+            <div class="letter letter--seven">I</div>
+            <div class="letter letter--height">A</div>
           </div>
         </section>
       
 
-      <div class="container">
-        <div class="container__background"></div>
+        <div class="container">
+          <div class="container__background"></div>
 
-        <div class="container__description">
-          <h1 class="container__description--titre">Bonjour, je m'appelle Nastasia.</h1>
-          <p class="container__description--paragraph">Je suis en première année en Bachelor Web à HETIC. Je cherche un stage en UX/UI design.<br> Venez decouvrir mes projets !</p>
-        </div>
-      </div> 
+          <div class="container__description">
+            <h1 class="container__description--titre">Bienvenue sur mon portfolio !</h1>
+            <p class="container__description--paragraph">Je m'appelle <span class="container__description--name">Nastasia</span> et je suis en première année en Bachelor Web à HETIC. Je cherche un stage de 3 mois en UX/UI design. Venez découvrir mes projets !</p>
+          </div>
+        </div> 
       </div> 
 
       <svg class="arrow" width="16" height="41" viewBox="0 0 16 41" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M7.2929 40.7071C7.68342 41.0976 8.31658 41.0976 8.70711 40.7071L15.0711 34.3431C15.4616 33.9526 15.4616 33.3195 15.0711 32.9289C14.6805 32.5384 14.0474 32.5384 13.6569 32.9289L8 38.5858L2.34315 32.9289C1.95262 32.5384 1.31946 32.5384 0.928934 32.9289C0.538409 33.3195 0.538409 33.9526 0.928934 34.3431L7.2929 40.7071ZM7 4.37114e-08L7 40L9 40L9 -4.37114e-08L7 4.37114e-08Z" fill="white"/>
         </svg>
     </section> 
-  </section>     
+  </section> 
+  
+  <section class="nespresso">
+    <div class="nespresso__gradient"></div>
+    <h2 class="nespresso__title">Mes projets</h2>
+    <div class="nespresso__flexbox">
+      <svg class="nespresso__tracker" width="12" height="196" viewBox="0 0 12 196" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="6" cy="6" r="6" fill="black"/>
+        <circle cx="6" cy="52" r="6" fill="black"/>
+        <circle cx="6" cy="98" r="6" fill="black"/>
+        <circle cx="6" cy="144" r="6" fill="black"/>
+        <circle cx="6" cy="190" r="6" fill="black"/>
+        <circle cx="6" cy="6" r="4" fill="white"/>
+        <line x1="6.25" y1="11" x2="6.25" y2="190" stroke="black" stroke-width="0.5"/>
+      </svg>
+      <div class="nespresso__container">
+        <h3 class="nespresso__subtitle">01<br>Nespresso</h3>
+        <p class="nespresso__content">Redesign de la homepage du site Nespresso</p>
+        <button class="nespresso__button">Découvrir</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="comptoir">
+    <div class="comptoir__gradient">
+      <img src="../images/mockupSC.svg" alt="mockup maquette So'Comptoir">
+    </div>
+    <div class="comptoir__flexbox">
+      <svg class="comptoir__tracker" width="12" height="196" viewBox="0 0 12 196" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="6" cy="6" r="6" fill="black"/>
+        <circle cx="6" cy="52" r="6" fill="black"/>
+        <circle cx="6" cy="98" r="6" fill="black"/>
+        <circle cx="6" cy="144" r="6" fill="black"/>
+        <circle cx="6" cy="190" r="6" fill="black"/>
+        <line x1="6.25" y1="11" x2="6.25" y2="190" stroke="black" stroke-width="0.5"/>
+        <circle cx="6" cy="52" r="4" fill="white"/>
+      </svg>
+      <div class="comptoir__container">
+        <h3 class="comptoir__title">02 <br>So'Comptoir</h3>
+        <p class="comptoir__content">Redesign complet du site So’comptoir</p>
+        <button class="comptoir__button">Découvrir</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="banal">
+    <div class="banal__gradient">
+      <img src="../images/mockupbanal.svg" alt="mockup maquette BANAL.">
+    </div>
+    <div class="banal__flexbox">
+      <svg width="12" height="196" viewBox="0 0 12 196" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="6" cy="6" r="6" fill="black"/>
+        <circle cx="6" cy="52" r="6" fill="black"/>
+        <circle cx="6" cy="98" r="6" fill="black"/>
+        <circle cx="6" cy="144" r="6" fill="black"/>
+        <circle cx="6" cy="190" r="6" fill="black"/>
+        <line x1="6.25" y1="11" x2="6.25" y2="190" stroke="black" stroke-width="0.5"/>
+        <circle cx="6" cy="98" r="4" fill="white"/>
+      </svg>
+      <div class="banal__container">
+        <h3 class="banal__title">03 <br>BANAL.</h3>
+        <p class="banal__content">Création d'une marque au concept unique</p>
+        <button class="banal__button">Découvrir</button>
+      </div>
+    </div>
+  </section>
   
 </body>
 </html>

@@ -1,0 +1,48 @@
+.mobile__logo {
+  max-width: 2rem;
+}
+
+.mobile__container {
+  color: $secondary-color;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  .mobile__content {
+    font-size: 0.75rem;
+  }
+  
+  .mobile__content--first {
+    font-size: 0.875rem;
+    letter-spacing:  0.14rem;
+  }
+  
+  .mobile__content--name {
+    font-family: "abril_fatfaceregular";
+    letter-spacing: 0.15rem;
+    font-size: 0.875rem;
+    background: linear-gradient(90deg, rgba(173, 189, 255, 0.774) 0%, #FFD7D5 100%), #FFD7D5;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+  
+  .mobile__content--design {
+    font-family: "abril_fatfaceregular";
+    letter-spacing: 0.15rem;
+    font-size: 0.875rem;
+    background: linear-gradient(90deg, rgba(173, 189, 255, 0.774) 0%, #FFD7D5 100%), #FFD7D5;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+}
+
+
+
+
+
+@media (min-width: 900px) {
+  .mobile {
+    display: none;
+  }
+}

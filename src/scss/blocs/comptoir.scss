@@ -1,0 +1,49 @@
+.comptoir {
+  min-height: 100vh;
+  background-color: white;
+
+  @media (min-width: 900px) {
+    display: block;
+  }
+}
+
+.comptoir__gradient {
+  position: absolute;
+  left: 50%;
+  height: 100vh;
+  width: 50vw;
+  background: $radient-color;
+  display: flex;
+  justify-content: center;
+}
+
+.comptoir__flexbox {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.comptoir__container {
+  text-align: right;
+  line-height: 5rem;
+}
+
+.comptoir__title {
+  font-family: "abril_fatfaceregular";
+  font-size: 3rem;
+}
+
+.comptoir__content {
+  font-family: "Roboto regular";
+  font-size: 1.5rem;
+}
+
+.comptoir__button {
+  font-family: "Roboto regular";
+  font-size: 1.125rem;
+  padding: 0.625rem 1.875rem 0.625rem 1.875rem;
+  border-radius: 1.875rem;
+  background: $radient-color;
+}

@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "abril_fatfaceregular";
+  src: url("../../Fonts/AbrilFatface/abrilfatface-regular.woff2") format("woff2"),
+       url("../../Fonts/AbrilFatface/abrilfatface-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: "Roboto regular";
+  src: url("../../Fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto light";
+  src: url("../../Fonts/Roboto/Roboto-Light.ttf");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "Roboto bold";
+  src: url("../../Fonts/Roboto/Roboto-Bold.ttf");
+}

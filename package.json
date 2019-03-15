@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/nastasiadotlic/Portfolio#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.11.0"
+    "parcel-bundler": "^1.11.0",
+    "sass": "^1.17.2"
   }
 }
