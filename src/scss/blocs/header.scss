@@ -2,7 +2,6 @@
   background-color: $primary-color;
   min-height: 100vh;
   font-family: "Roboto regular";
-  padding: 1.25rem;
   color: $secondary-color;
 }
 
@@ -25,7 +24,10 @@
 @media (min-width: 900px) {
   .desktop {
     display: block;
-    padding: 1.5rem;
+  }
+
+  .header {
+    padding: 2.5rem;
   }
 
   .header__menu {
@@ -40,7 +42,7 @@
       font-size: 1.25rem;
       min-width: 30rem;
 
-      a{
+      a {
         color:white;
       }
       a:hover {
@@ -51,94 +53,68 @@
     }
   }
 
-  
-
-  .names {
+  .main {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vh;
   }
 
-  .name {
-    margin-left: 10%;
-    margin-top: 2%;
-  }
-
-  .letters {
-    font-family: "abril_fatfaceregular";
-    font-size: 6.25rem;
+  .main__letters {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 17rem;
+    letter-spacing: 1.5rem;
   }
 
   .letter {
+    font-family: "abril_fatfaceregular";
+    font-size: 6.25rem;
     padding: 1.2rem;
   }
 
   .letter--one {
-    //animation: textGlow 10s infinite;
+    animation: textGlow 20s infinite;
   }
 
   .letter--two {
-    //animation: textGlow 10s infinite 0.1s;
+    animation: textGlow 20s infinite 0.1s;
   }
 
   .letter--three {
-    //animation: textGlow 10s infinite 0.3s;
+    animation: textGlow 20s infinite 0.3s;
   }
 
   .letter--four {
-    //animation: textGlow 10s infinite 0.5s;
+    animation: textGlow 20s infinite 0.5s;
   }
   
   .letter--five {
-    //animation: textGlow 10s infinite 0.7s;
+    animation: textGlow 20s infinite 0.7s;
   }
   
   .letter--six {
-    //animation: textGlow 10s infinite 0.9s;
+    animation: textGlow 20s infinite 0.9s;
   }
   
   .letter--seven {
-    //animation: textGlow 10s infinite 0.4s;
+    animation: textGlow 20s infinite 0.4s;
   }
   
   .letter--height {
-    //animation: textGlow 10s infinite 0.2s;
+    animation: textGlow 20s infinite 0.2s;
   }
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-top: 2%;
-    margin-left: 15%; // peut être voir pour utiliser translate X/Y
+  .main__description--titre {
+    font-size: 2rem;
+    font-family: "Roboto light";
   }
 
-  .container__background {
-    height: 15%;
-    width: 40%;
-    background: $radient-color;
+  .main__description--paragraph {
+    line-height: 2rem;
   }
+  
 
-  .container__description {
-    width: 90%;
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
-
-    .container__description--titre {
-      font-size: 1.5rem;
-    }
-
-    .container__description--paragraph {
-      line-height: 2rem;
-    }
-  }
-
-  .container__description--name {
+  .main__description--name {
     font-family: "abril_fatfaceregular";
     font-size: 1.5rem;
     letter-spacing: 0.15rem;

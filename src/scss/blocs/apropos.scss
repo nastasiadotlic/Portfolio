@@ -3,11 +3,52 @@ body {
   height: 100vh;
 }
 
-.logo {
-  margin-left: 40px;
-  margin-top: 40px;
+.navigation__menu {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Roboto light";
+  font-size: 1.25rem;
+  min-width: 30rem;
+
+  .selection {
+    text-decoration: underline;
+  }
+
+  a {
+    color: black;
+  }
+
+  a:hover {
+    color: white;
+  }
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70vh;
+}
 
+.about__title {
+  font-size: 2.5rem;
+  font-family: "Roboto regular"; 
+}
+
+.about__subtitle {
+  font-family: "abril_fatfaceregular";
+  font-size: 1.5rem;
+}
+
+.about__content {
+  width: 80%;
+  column-count: 2;
+  column-gap: 40px;
+  column-fill: balance;
+  line-height: 1.5rem;
+  font-family: "Roboto light";
+  font-size: 1rem;
+}
 
 
