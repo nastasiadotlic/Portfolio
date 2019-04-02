@@ -1,19 +1,74 @@
 .contact__title {
+  color: $secondary-color;
   font-size: 2.25rem;
   font-family: "Roboto light";
   text-align: center;
 }
 
+.big {
+  display: flex;
+  justify-content: center;
+}
+
 .contact__container {
-  font-family: "Roboto regular";
+  color: $secondary-color;
+  font-family: "Roboto light";
   font-size: 1.5rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  width: 800px;
-  height: 700px;
-  position: absolute;
-  left: 25%;
+  width: 60rem;
+  height: 40rem;
   line-height: 2rem;
+}
+
+.mail {
+  display: flex;
+  justify-content: space-evenly;
+  width: 26rem;
+}
+
+.linkedin {
+  display: flex;
+  justify-content: space-evenly;
+  width: 25rem;
+}
+
+.dribbble {
+  display: flex;
+  justify-content: space-evenly;
+  width: 25rem;
+}
+
+.behance {
+  display: flex;
+  justify-content: space-evenly;
+  width: 25rem;
+}
+
+@media (max-width: 1000px) {
+  .contact__title {
+    font-size: 2rem;
+    //transform: translateY(50px);
+  }
+  .contact__container {
+    width: 45rem;
+    left: 10%;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .header__logo {
+    display: none;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .contact {
+    display: none;
+  }
 }

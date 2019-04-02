@@ -1,5 +1,5 @@
 body {
-  background: $radient-color;
+  background: $primary-color;
   height: 100vh;
 }
 
@@ -11,15 +11,18 @@ body {
   min-width: 30rem;
 
   .selection {
+    color: $secondary-color;
     text-decoration: underline;
   }
 
   a {
-    color: black;
+    color: $secondary-color;
   }
 
   a:hover {
-    color: white;
+    background: -webkit-linear-gradient(360deg, rgba(173, 189, 255, 0.774) 0%, #FFD7D5 100%), #FFD7D5;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
   }
 }
 
@@ -32,16 +35,21 @@ body {
 }
 
 .about__title {
+  color: $secondary-color;
   font-size: 2.5rem;
   font-family: "Roboto regular"; 
 }
 
 .about__subtitle {
+  background: $radient-color;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
   font-family: "abril_fatfaceregular";
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .about__content {
+  color: $secondary-color;
   width: 80%;
   column-count: 2;
   column-gap: 40px;
@@ -49,6 +57,12 @@ body {
   line-height: 1.5rem;
   font-family: "Roboto light";
   font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+  .about {
+    display: none;
+  }
 }
 
 

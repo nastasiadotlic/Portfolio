@@ -43,8 +43,9 @@
       min-width: 30rem;
 
       a {
-        color:white;
+        color:$secondary-color;
       }
+
       a:hover {
         background: -webkit-linear-gradient(360deg, rgba(173, 189, 255, 0.774) 0%, #FFD7D5 100%), #FFD7D5;
         -webkit-background-clip: text;
