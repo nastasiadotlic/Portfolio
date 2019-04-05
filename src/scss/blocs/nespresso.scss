@@ -156,7 +156,11 @@ PAGE PROJET
   background: $nespresso-gradient;
 }
 
-.design__button {
+.design__font--montserrat {
+  font-family: "Montserrat-Bold";
+}
+
+.design__button--nespresso {
   width: 11.25rem;
   background: $nespresso-gradient;
   text-align: center;
@@ -186,7 +190,7 @@ PAGE PROJET
   font-size: 3rem;
 }
  
-.maquette {
+.maquette__nespresso {
   height: 3000px;
   background-color: black;
   display: flex;
