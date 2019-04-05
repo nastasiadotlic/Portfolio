@@ -42,11 +42,11 @@
       font-size: 1.25rem;
       min-width: 30rem;
 
-      a {
+      .lien__header {
         color:$secondary-color;
       }
 
-      a:hover {
+      .lien__header:hover {
         background: -webkit-linear-gradient(360deg, rgba(173, 189, 255, 0.774) 0%, #FFD7D5 100%), #FFD7D5;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
