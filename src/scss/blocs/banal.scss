@@ -61,5 +61,13 @@ PAGE PROJET
 }
 
 .three__background {
-  background: #E8D100;
+  background: $banal-gradient;
+  width: 100vw;
+  height: 25vh;
+}
+
+.three__title {
+  font-family: "abril_fatfaceregular";
+  font-size: 3rem;
+  text-align: center;
 }

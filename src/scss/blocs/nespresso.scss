@@ -69,14 +69,26 @@ PAGE PROJET
   background-color: white;
 }
 
-.lien__nespresso {
-  color: black;
-}
-
 .one__background {
   background: $nespresso-gradient;
   width: 100vw;
-  height: 20vh;
+  height: 25vh;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Roboto light";
+  font-size: 1.25rem;
+  min-width: 30rem;
+}
+
+.menu__link {
+  color: black;
+
+  &:hover {
+    color: white;
+  }
 }
 
 .one__title {
@@ -200,3 +212,5 @@ PAGE PROJET
   display: flex;
   justify-content: center;
 }
+
+
