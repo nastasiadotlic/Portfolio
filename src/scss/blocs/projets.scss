@@ -1,0 +1,54 @@
+.projets {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.projet {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: $radient-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projet__nespresso {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.projet__sc {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.projet__banal {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.projet__hidden {
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  width: 450px;
+  height: 450px;
+  opacity: 0;
+  background-color: $primary-color;
+  color: white;
+}
+
+.projet:hover .projet__hidden {
+  opacity: 1;
+  animation: fadeIn 0.7s;
+}
+
+
