@@ -13,12 +13,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
 }
 
 .projet__nespresso {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.projet__title {
+  font-family: "Roboto light";
+  font-size: 30px;
+  margin-bottom: 20px;  
+}
+
+.projet__button {
+  font-family: "Roboto regular";
+  font-size: 1.125rem;
+  padding: 0.625rem 1.875rem 0.625rem 1.875rem;
+  border-radius: 1.875rem;
+  background: $radient-color;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 .projet__sc {
@@ -44,6 +64,10 @@
   opacity: 0;
   background-color: $primary-color;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .projet:hover .projet__hidden {

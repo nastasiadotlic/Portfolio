@@ -2,14 +2,7 @@
 HOMEPAGE
 */
 
-.comptoir {
-  min-height: 100vh;
-  background-color: white;
 
-  @media (min-width: 900px) {
-    display: block;
-  }
-}
 
 /*.comptoir__gradient {
   position: absolute;
@@ -56,65 +49,78 @@ HOMEPAGE
 PAGE PROJET
 */
 
-.two {
-  background-color: white;
-}
 
-.two__background {
+
+.background__comptoir {
   background: $comptoir-gradient;
-  width: 100vw;
   height: 25vh;
 }
 
-.two__title {
+.comptoir {
+  background-color: white;
+}
+
+.comptoir__title {
   font-family: "abril_fatfaceregular";
-  font-size: 3rem;
-  text-align: center;
+  font-size: 1.875rem;
+  margin-left: 10%;
+  padding-top: 20px;
 }
 
-.two__container {
-  display: flex;
-  justify-content: space-around;
+.comptoir__subtitle {
+  font-size: 1.125rem;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+.steps--comptoir {
   width: 100vw;
-  margin-top: 2.5rem; 
-}
-
-.two__content {
-  width: 40vw;
-  height: 31.25rem;
+  height: 1200px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  line-height: 22px;
+  justify-content: center;
+  margin-top: 30px;
 }
 
-.two__text {
-  margin-bottom: 0.9375rem;
+.steps__content--green {
+  color: #6F893B;
+  font-size: 1.375rem;
+  font-family: "Roboto light";
 }
 
-.figma {
-  max-width: 10%;
-}
-
-.darkblue {
-  width: 6vw;
-  height: 10vh;
+.design__colors--darkblue {
+  width: 25%;
   margin-right: 1.25rem;
   background-color: #11191B;
+
+  &:after {
+    content:'';
+    display: block;
+    padding-bottom: 100%;
+  }
 }
 
-.green {
-  width: 6vw;
-  height: 10vh;
+.design__colors--green {
+  width: 25%;
   margin-right: 1.25rem;
   background-color: #A4CF4C;
+
+  &:after {
+    content:'';
+    display: block;
+    padding-bottom: 100%;
+  }
 }
 
-.yellow {
-  width: 6vw;
-  height: 10vh;
+.design__colors--orange{
+  width: 25%;
   margin-right: 1.25rem;
   background-color: #FFD43A;
+
+  &:after {
+    content:'';
+    display: block;
+    padding-bottom: 100%;
+  }
 }
 
 .design__font--sunset {
