@@ -3,54 +3,13 @@ HOMEPAGE
 */
 
 
-.banal {
+/*.banal {
   min-height: 100vh;
   background-color: white;
 
   @media (min-width: 900px) {
     display: block;
   }
-}
-
-/*.banal__gradient {
-  position: absolute;
-  left: 50%;
-  height: 100vh;
-  width: 50vw;
-  background: $radient-color;
-  display: flex;
-  justify-content: center;
-}
-
-.banal__flexbox {
-  width: 50vw;
-  height: 100vh;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.banal__container {
-  text-align: right;
-  line-height: 5rem;
-}
-
-.banal__title {
-  font-family: "abril_fatfaceregular";
-  font-size: 3rem;
-}
-
-.banal__content {
-  font-family: "Roboto regular";
-  font-size: 1.5rem;
-}
-
-.banal__button {
-  font-family: "Roboto regular";
-  font-size: 1.125rem;
-  padding: 0.625rem 1.875rem 0.625rem 1.875rem;
-  border-radius: 1.875rem;
-  background: $radient-color;
 }*/
 
 /*
@@ -59,6 +18,12 @@ PAGE PROJET
 
 .background__banal {
   background: $banal-gradient;
+  width: 100vw;
+  height: 25vh;
+}
+
+.banal {
+  background-color: white;
 }
 
 .banal__title {
@@ -70,14 +35,28 @@ PAGE PROJET
 
 .banal__subtitle {
   font-size: 1.125rem;
+  width: 80%;
   margin-left: 10%;
   margin-top: 20px;
+}
+
+.steps--banal {
+  height: 1200px;
 }
 
 .steps__content--black {
   color: black;
   font-size: 1.375rem;
   font-family: "Roboto light";
+}
+
+.design--bourbon {
+  max-width: 90%;
+}
+
+.design--gotham {
+  font-family: "Gotham";
+  font-size: 20px;
 }
 
 .design__colors--yellow {
@@ -90,6 +69,27 @@ PAGE PROJET
     display: block;
     padding-bottom: 100%;
   }
+}
+
+.design__button--banal {
+  width: 300px;
+  padding: 15px 5px 15px 5px;
+  border: 1px solid #FFE600;
+  text-align: center;
+}
+
+.maquette__banal {
+  @media(min-width: 768px) {
+    background-color: white;
+  }
+
+  @media(min-width: 1000px) {
+    height: 3800px;
+  }
+}
+
+.maquette__picture--banal {
+  max-width: 90%;
 }
 
 

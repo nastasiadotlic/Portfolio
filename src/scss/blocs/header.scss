@@ -7,116 +7,138 @@
 
 .desktop {
   display: none;
+
+  @media (min-width: 768px) {
+      display: block;
+  }
 }
 
-@media (min-width: 900px) {
-  .desktop {
-    display: block;
+.header {
+  @media (min-width: 768px) {
+    padding: 2rem;
   }
 
-  .header {
+  @media (min-width: 1000px) {
     padding: 2.5rem;
   }
+}
 
-  .header__menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigation__menu {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Roboto light";
+  font-size: 1.25rem;
+  min-width: 30rem;
+}
+
+.navigation__link {
+  color:$secondary-color;
+
+  &:hover {
+    background: -webkit-linear-gradient(360deg, rgba(173, 189, 255, 0.774) 0%, #FFD7D5 100%), #FFD7D5;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
+}
 
-  .navigation__menu {
-    display: flex;
-    justify-content: space-evenly;
-    font-family: "Roboto light";
-    font-size: 1.25rem;
-    min-width: 30rem;
-  }
-
-  .navigation__link {
-    color:$secondary-color;
-
-    &:hover {
-      background: -webkit-linear-gradient(360deg, rgba(173, 189, 255, 0.774) 0%, #FFD7D5 100%), #FFD7D5;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  }
-
-  .main {
+.main {
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     height: 80vh;
   }
+}
 
-  .main__letters {
+.main__letters {
+  @media(min-width: 768px) {
     display: flex;
-    letter-spacing: 1.5rem;
+    flex-wrap: wrap;
+    width: 13.44rem;
+    letter-spacing: 2.5rem;
+    justify-content: space-around;
   }
 
-  .letter {
+  @media (min-width: 1000px) {
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    letter-spacing: 1.5rem;
+  }
+}
+
+.letter {
+  @media(min-width: 768px) {
     font-family: "abril_fatfaceregular";
+    font-size: 5.5rem;
+  }
+
+  @media (min-width: 1000px) {
     font-size: 6.25rem;
     padding: 1.2rem;
   }
-
-  .letter--one {
-    animation: textGlow 20s infinite;
-  }
-
-  .letter--two {
-    animation: textGlow 20s infinite 0.1s;
-  }
-
-  .letter--three {
-    animation: textGlow 20s infinite 0.3s;
-  }
-
-  .letter--four {
-    animation: textGlow 20s infinite 0.5s;
-  }
-  
-  .letter--five {
-    animation: textGlow 20s infinite 0.7s;
-  }
-  
-  .letter--six {
-    animation: textGlow 20s infinite 0.9s;
-  }
-  
-  .letter--seven {
-    animation: textGlow 20s infinite 0.4s;
-  }
-  
-  .letter--height {
-    animation: textGlow 20s infinite 0.2s;
-  }
-
-  .main__description--titre {
-    font-size: 2rem;
-    font-family: "Roboto light";
-  }
-
-  .main__description--paragraph {
-    line-height: 2rem;
-  }
-  
-
-  .main__description--name {
-    font-family: "abril_fatfaceregular";
-    font-size: 1.5rem;
-    letter-spacing: 0.15rem;
-    background: $radient-color;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-  }
-
-  /*.arrow {
-    position: absolute;
-    right: 50%;
-    animation: moveUp 1s alternate infinite; 
-   
-  } */
 }
 
+.letter--one {
+  animation: textGlow 20s infinite;
+}
+
+.letter--two {
+  animation: textGlow 20s infinite 0.1s;
+}
+
+.letter--three {
+  animation: textGlow 20s infinite 0.3s;
+}
+
+.letter--four {
+  animation: textGlow 20s infinite 0.5s;
+}
+
+.letter--five {
+  animation: textGlow 20s infinite 0.7s;
+}
+
+.letter--six {
+  animation: textGlow 20s infinite 0.9s;
+}
+
+.letter--seven {
+  animation: textGlow 20s infinite 0.4s;
+}
+
+.letter--height {
+  animation: textGlow 20s infinite 0.2s;
+}
+
+.main__description--titre {
+  @media(min-width: 768px) {
+    font-family: "Roboto light";
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+  } 
+}
+
+.main__description--paragraph {
+  @media(min-width: 768px) {
+    line-height: 2rem;
+    width: 80%;
+    text-align: center;
+  }
+}
+
+.main__description--name {
+  font-family: "abril_fatfaceregular";
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+  background: $radient-color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

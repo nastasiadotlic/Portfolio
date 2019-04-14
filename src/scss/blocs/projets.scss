@@ -1,22 +1,42 @@
 .projets {
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
 
-.projet {
-  position: relative;
-  width: 500px;
-  height: 500px;
-  background: $radient-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @media (max-width: 500px) {
+  @media(max-width: 767px) {
     display: none;
   }
+  
+  @media(min-width: 768px) {
+    width: 100vw;
+    height: 2200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  @media(min-width: 1000px) {
+    height: 80vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+  
+
+.projet {
+
+  @media(min-width: 768px) {
+    width: 500px;
+    height: 500px;
+    background: $radient-color;
+  }
+
+  @media(min-width: 1000px) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
 }
 
 .projet__nespresso {
@@ -32,13 +52,22 @@
 }
 
 .projet__button {
-  font-family: "Roboto regular";
-  font-size: 1.125rem;
-  padding: 0.625rem 1.875rem 0.625rem 1.875rem;
-  border-radius: 1.875rem;
-  background: $radient-color;
-  margin-top: 20px;
-  cursor: pointer;
+
+  @media(min-width: 768px) {
+    font-family: "Roboto regular";
+    padding: 0.625rem 1.875rem 0.625rem 1.875rem;
+    font-size: 1.125rem;
+    border-radius: 1.875rem;
+    background: $primary-color;
+    margin-top: 20px;
+    color: white;
+  }
+
+  @media(min-width: 1000px) {
+    background: $radient-color;
+    cursor: pointer;
+    color: $primary-color;
+  }
 }
 
 .projet__sc {
@@ -54,20 +83,33 @@
 }
 
 .projet__hidden {
-  position: absolute;
-  top: auto;
-  bottom: auto;
-  left: auto;
-  right: auto;
-  width: 450px;
-  height: 450px;
-  opacity: 0;
-  background-color: $primary-color;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+  @media(min-width: 768px) {
+    opacity: 1;
+    width: 500px;
+    height: 500px;
+    transform: translateY(-20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+  @media(min-width: 1000px) {
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    width: 450px;
+    height: 450px;
+    opacity: 0;
+    background-color: $primary-color;
+    color: white;
+    justify-content: center;
+    transform: none;
+  }
+  
 }
 
 .projet:hover .projet__hidden {

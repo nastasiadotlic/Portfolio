@@ -4,12 +4,6 @@ body {
 }
 
 .navigation__menu {
-  display: flex;
-  justify-content: space-evenly;
-  font-family: "Roboto light";
-  font-size: 1.25rem;
-  min-width: 30rem;
-
   .selection {
     color: $secondary-color;
     text-decoration: underline;
@@ -31,35 +25,57 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 70vh;
+  height: 80vh;
 }
 
 .about__title {
-  color: $secondary-color;
-  font-size: 2.5rem;
-  font-family: "Roboto regular"; 
+  @media (min-width: 768px) {
+    color: $secondary-color;
+    font-family: "Roboto regular";
+    font-size: 2rem;
+  }
+  
+  @media (min-width: 1000px) {
+    font-size: 2.5rem;
+  }
 }
 
 .about__subtitle {
-  background: $radient-color;
+  @media (min-width: 768px) {
+    background: $radient-color;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-  font-family: "abril_fatfaceregular";
-  font-size: 2rem;
+    font-family: "abril_fatfaceregular";
+    font-size: 1.5rem;
+  }
+
+  @media (min-width: 1000px) {
+    font-size: 2rem;
+  }
 }
 
 .about__content {
-  color: $secondary-color;
-  width: 80%;
-  column-count: 2;
-  column-gap: 2.5rem;
-  column-fill: balance;
-  line-height: 1.5rem;
-  font-family: "Roboto light";
-  font-size: 1rem;
+  @media (min-width: 768px) {
+    width: 90%;
+    color: $secondary-color;
+    column-count: 2;
+    column-gap: 2rem;
+    column-fill: balance;
+    line-height: 1.8rem;
+    font-family: "Roboto light";
+    font-size: 1rem;
+  }
+
+  @media (min-width: 1000px) {
+    width: 80%;
+    column-gap: 2.5rem;
+  }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
+  .small {
+    display: none;
+  }
   .about {
     display: none;
   }

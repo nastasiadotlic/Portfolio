@@ -69,6 +69,7 @@ PAGE PROJET
 
 .comptoir__subtitle {
   font-size: 1.125rem;
+  max-width: 80%;
   margin-left: 10%;
   margin-top: 20px;
 }
@@ -143,8 +144,15 @@ PAGE PROJET
 }
 
 .maquette__sc {
-  height: 4600px;
-  display: flex;
-  justify-content: center;
-  background-color: #11191B;
+  @media(min-width: 768px) {
+    background-color: #11191B;
+  }
+
+  @media(min-width: 1000px) {
+    height: 4600px;
+  }
+}
+
+.maquette__picture--sc {
+  max-width: 90%;
 }
